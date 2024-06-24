@@ -79,7 +79,7 @@ Given the input to the model, it is necessary to save the output in the same for
 
 ### Step 5: Using ACCA
 
-Once the complete output has been saved, everything is now ready to use *ACCA*. Access the repository https://github.com/dessertlab/ACCA/tree/main and clone with the command `gh repo clone dessertlab/ACCA`. 
+Once the complete output has been saved, everything is now ready to use *ACCA*. Access the repository [here](https://github.com/dessertlab/ACCA/tree/main) and clone it with the command `gh repo clone dessertlab/ACCA`. 
 This repository contains:
 1. The source code for *ACCA* and references file and predictions file to perform the semantic evaluation of AI-generated code and replicate our empirical analysis. The folder also contains a [README.md](https://github.com/dessertlab/ACCA/blob/main/ACCA/README.md) file explaining how to run the code and how to test *ACCA* on a different pair of references and predictions files. (``ACCA`` folder).
 2. The files necessary for setting up the working environment, including the NASM assembler (``requirements.txt`` and ``nasm_setup.sh``).
