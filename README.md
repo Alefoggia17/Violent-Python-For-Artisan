@@ -96,7 +96,7 @@ Access the ACCA folder. To correctly perform the evaluation, make sure to follow
 
 #### Semantic Correctness Analysis 
 
-* To perform the syntactic evaluation, run the command ``python semantic_analisys.py``. The script opens up a window that lets you select the file to evaluate. Make sure to select the file containing the results of the previous syntactic analysis.
+* To perform the semantic evaluation, run the command ``python semantic_analisys.py``. The script opens up a window that lets you select the file to evaluate. Make sure to select the file containing the results of the previous syntactic analysis.
 
 ### Step 6: Metrics
 
