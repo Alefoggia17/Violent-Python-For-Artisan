@@ -90,14 +90,18 @@ Access the ACCA folder. To correctly perform the evaluation, make sure to follow
 #### Step 1: Syntactic Correctness Analysis
 	
 * To perform the syntactic evaluation, run the command ``python syntactic_analisys.py``. The script opens up a window that lets you select the file to evaluate. 
-* The results of the syntactic analysis are both shown and stored in a .csv file in the ``Output/Output_Syntactic_Analysis`` folder. In the ``Filtered Snippets`` folder you can also find the results filtered by warnings, undefined symbol errors and other errors.
 
 #### Step 2: Semantic Correctness Analysis 
 
 * To perform the syntactic evaluation, run the command ``python semantic_analisys.py``. The script opens up a window that lets you select the file to evaluate. Make sure to select the file containing the results of the previous syntactic analysis.
 
+
 ### Step 6: Results
+
+The results can be stored in a manually compiled excel file such as in 'https://github.com/dessertlab/ACCA/tree/main/Experimental%20Results'
 * The results of the semantic analysis are both shown and stored in a .csv file in the ``Output/Output_Semantic_Analysis`` folder.
+* The results of the syntactic analysis are both shown and stored in a .csv file in the ``Output/Output_Syntactic_Analysis`` folder. In the ``Filtered Snippets`` folder you can also find the results filtered by warnings, undefined symbol errors and other errors.
+* 
 
 
 
