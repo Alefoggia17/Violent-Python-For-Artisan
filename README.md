@@ -58,7 +58,7 @@ Ensure you have Anaconda3 installed, if not install **Python 3.7** from [*Anacon
 
 In the context of Prompt Engineering, it is essential to create correct and precise prompts to obtain as many answers from the specific model. In this experiment, the goal is to ask ChatGPT-3.5 to generate Assembly language codes, given natural language descriptions. When constructing the prompt it is necessary to specify the structure of the code so that it is generated in the correct form. Finally, it is necessary to specify that the generated code must be extracted in a simple way.
 
-[!Warning]
+> [!WARNING]
 
 Pay attention to the structure of the code snippets. As you can see from the previously downloaded `assembly-test.out` file, the Assembly codes are all *single-line*. In fact, multi-line instructions are separated from each other with `\n`.
 
@@ -68,7 +68,7 @@ In the following folder there is the prompt submitted to ChatGPT for the creatio
 
 Once created, you need to prompt the model. Then log in to ChatGPT (https://chatgpt.com/), paste the prompt and hit enter.
 
-[!Warning]
+> [!WARNING]
 
 It is recommended to use a subset of samples (~50/100 samples) to submit to the model so that it responds correctly without making errors. If you want to consider the entire dataset (590 samples), then it is possible to send the descriptions in natural language with a rate of 50-100 intents at a time. This will avoid any model errors in code generation. 
 *Please note*: errors such as sample overlap, incorrect code generation, slow loading etc may be due to the length of the submitted prompt and the amount of data to be processed. Consequently, it is recommended to *refresh* the page after 3 submissions.
