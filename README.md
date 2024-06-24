@@ -97,7 +97,7 @@ Access the ACCA folder. To correctly perform the evaluation, make sure to follow
 
 ### Step 6: Metrics
 
-Through the script [here] it is possible to calculate some metrics as described in [README.md](https://github.com/dessertlab/ACCA/blob/main/Experimental%20Results/README.md)
+Through the script `` output_similarity_metrics_best `` it is possible to calculate some metrics as described in [README.md](https://github.com/dessertlab/ACCA/blob/main/Experimental%20Results/README.md)
 
 ### Step 7: Results
 
