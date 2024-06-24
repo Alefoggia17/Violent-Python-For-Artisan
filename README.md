@@ -95,13 +95,15 @@ Access the ACCA folder. To correctly perform the evaluation, make sure to follow
 
 * To perform the syntactic evaluation, run the command ``python semantic_analisys.py``. The script opens up a window that lets you select the file to evaluate. Make sure to select the file containing the results of the previous syntactic analysis.
 
+### Step 6: Metrics
 
-### Step 6: Results
+Through the script [here] it is possible to calculate some metrics as described in [README.md](https://github.com/dessertlab/ACCA/blob/main/Experimental%20Results/README.md)
 
-The results can be stored in a manually compiled excel file such as in 'https://github.com/dessertlab/ACCA/tree/main/Experimental%20Results'
+### Step 7: Results
+
+The results can be stored in a manually compiled excel file such as [here](https://github.com/dessertlab/ACCA/blob/main/Experimental%20Results/Results.xlsx)
 * The results of the semantic analysis are both shown and stored in a .csv file in the ``Output/Output_Semantic_Analysis`` folder.
 * The results of the syntactic analysis are both shown and stored in a .csv file in the ``Output/Output_Syntactic_Analysis`` folder. In the ``Filtered Snippets`` folder you can also find the results filtered by warnings, undefined symbol errors and other errors.
-* 
 
 
 
