@@ -58,7 +58,7 @@ Ensure you have Anaconda3 installed, if not install **Python 3.7** from [*Anacon
 
 In the context of Prompt Engineering, it is essential to create correct and precise prompts to obtain as many answers from the specific model. In this experiment, the goal is to ask ChatGPT-3.5 to generate Assembly language codes, given natural language descriptions. When constructing the prompt it is necessary to specify the structure of the code so that it is generated in the correct form. Finally, it is necessary to specify that the generated code must be extracted in a simple way.
 
-⚠️ **WARNING:**
+> [!CAUTION]
 
 Pay attention to the structure of the code snippets. As you can see from the previously downloaded `assembly-test.out` file, the Assembly codes are all *single-line*. In fact, multi-line instructions are separated from each other with `\n`.
 
