@@ -68,9 +68,11 @@ In the following folder there is the prompt submitted to ChatGPT for the creatio
 Once created, you need to prompt the model. Then log in to ChatGPT (https://chatgpt.com/), paste the prompt and hit enter.
 
 
-> [!CAUTION]
+> [!WARNING]
 > It is recommended to use a subset of samples (~50/100 samples) to submit to the model so that it responds correctly without making errors. If you want to consider the entire dataset (590 samples), then it is possible to send the descriptions in natural language with a rate of 50-100 intents at a time. This will avoid any model errors in code generation. 
-*Please note*: errors such as sample overlap, incorrect code generation, slow loading etc may be due to the length of the submitted prompt and the amount of data to be processed. Consequently, it is recommended to *refresh* the page after 3 submissions.
+
+> [!NOTE]
+> Errors such as sample overlap, incorrect code generation, slow loading etc may be due to the length of the submitted prompt and the amount of data to be processed. Consequently, it is recommended to *refresh* the page after 3 submissions.
 
 ### Step 4: Save the output
 
