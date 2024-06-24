@@ -60,7 +60,7 @@ In the context of Prompt Engineering, it is essential to create correct and prec
 
 > [!CAUTION]
 
-Pay attention to the structure of the code snippets. As you can see from the previously downloaded `assembly-test.out` file, the Assembly codes are all *single-line*. In fact, multi-line instructions are separated from each other with `\n`.
+> Pay attention to the structure of the code snippets. As you can see from the previously downloaded `assembly-test.out` file, the Assembly codes are all *single-line*. In fact, multi-line instructions are separated from each other with `\n`.
 
 In the following folder there is the prompt submitted to ChatGPT for the creation of Assembly codes:
 
