@@ -52,7 +52,7 @@ Ensure you have Anaconda3 installed, if not install **Python 3.7** from [*Anacon
 
 ### Step 2: Dataset
 
-At https://github.com/dessertlab/ESCAPE/tree/main/datasets/shellcode_ia32_extended it is possible to extract a subset of intent/snippet pairs which will constitute the starting dataset. Download only the `assembly-test.in` and `assembly-test.out` files. The first contains all the descriptions in natural language. The second contains all the Assembly language codes that represent the *Ground Truth*.
+[Here](https://github.com/dessertlab/ESCAPE/tree/main/datasets/shellcode_ia32_extended) it is possible to extract a subset of intent/snippet pairs which will constitute the starting dataset. Download only the `assembly-test.in` and `assembly-test.out` files. The first contains all the descriptions in natural language. The second contains all the Assembly language codes that represent the *Ground Truth*.
 
 ### Step 3: Creating prompt
 
