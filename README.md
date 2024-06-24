@@ -14,9 +14,9 @@ This practice involves designing and optimizing prompts, which are the initial i
 ### Training phase
 
 The training phase is the process through which an AI model learns from data. During this phase, the model is exposed to a labeled dataset, and its parameters are optimized to minimize error in its predictions. In this phase data collection, data preprocessing and dataset division take place. In particular, dataset is divided into three main parts: 
-* Training set is used to train the model.
-* Validation set is used to optimize the model parameters.
-* Test set is used to evaluate the final performance of the model.
+* *Training set* is used to train the model.
+* *Validation set* is used to optimize the model parameters.
+* *Test set* is used to evaluate the final performance of the model.
 
 ### Inference phase
 
