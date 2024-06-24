@@ -48,7 +48,7 @@ Ensure you have Anaconda3 installed, if not install **Python 3.7** from [*Anacon
 
 ### Step 2: Dataset
 
-At https://github.com/dessertlab/ESCAPE/tree/main/datasets/shellcode_ia32_extended it is possible to extract a subset of intent/snippet pairs which will constitute the starting dataset. Download only the `assembly-test.in` and `assembly-test.out` files. The first contains all the descriptions in natural language. The second contains all the Assembly language codes related to natural language descriptions.
+At https://github.com/dessertlab/ESCAPE/tree/main/datasets/shellcode_ia32_extended it is possible to extract a subset of intent/snippet pairs which will constitute the starting dataset. Download only the `assembly-test.in` and `assembly-test.out` files. The first contains all the descriptions in natural language. The second contains all the Assembly language codes that represent the *Ground Truth*.
 
 ### Step 3: Creating prompt
 
@@ -95,9 +95,10 @@ Access the ACCA folder. To correctly perform the evaluation, make sure to follow
 #### Step 2: Semantic Correctness Analysis 
 
 * To perform the syntactic evaluation, run the command ``python semantic_analisys.py``. The script opens up a window that lets you select the file to evaluate. Make sure to select the file containing the results of the previous syntactic analysis.
-* The results of the semantic analysis are both shown and stored in a .csv file in the ``Output/Output_Semantic_Analysis`` folder.
 
 ### Step 6: Results
+* The results of the semantic analysis are both shown and stored in a .csv file in the ``Output/Output_Semantic_Analysis`` folder.
+
 
 
 
