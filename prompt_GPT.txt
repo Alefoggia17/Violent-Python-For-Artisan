@@ -4,3 +4,5 @@ Can you build a two column table where:
 2 The second column is the column of Assembly codes that you need to generate, each with respect to the single element of the first list. The codes must be single-line, i.e. if there are multiple instructions they must be separated by a \n.
 
 The '\n' or '\\n' or '\\\n' or '\\\\n' etc. should not be considered within the codes, therefore if they are present they must be absolutely ignored, and therefore you must not return.
+
+This is the list:
