@@ -1,5 +1,5 @@
 A list containing natural language descriptions of Python codes is given.
-Can you generate a Python codes, each with respect to the single element of the first list?
+Can you generate a table with only the column of Python codes, each with respect to the single element of the first list?
 The codes must be single-line, i.e. if there are multiple instructions they must be separated by a \n. Also, the codes are relative to functions so they will all have to start with "def...".
 I'll leave you an example for better understanding:
 “Scan the tgtHost on tgtPort with nmap and calculate the state” is the natural language description.
