@@ -49,10 +49,7 @@ In `prompt_GPT.txt` there is an example of prompt submitted to ChatGPT for the c
 Once created, you need to prompt the model. Then log in to [ChatGPT](https://chatgpt.com/) or [Claude Sonnet](https://www.anthropic.com/news/claude-3-5-sonnet), paste the prompt and hit enter.
 
 > [!WARNING]
-> It is recommended to use a subset of samples to submit to the model so that it responds correctly without making errors. If you want to consider the entire dataset, then it is possible to send the descriptions in natural language with a rate of 50-100 intents at a time. This will avoid any model errors in code generation. 
-
-> [!NOTE]
-> Errors such as sample overlap, incorrect code generation, slow loading etc may be due to the length of the submitted prompt and the amount of data to be processed. Consequently, it is recommended to *refresh* the page after 3 submissions.
+> It is recommended to use a subset of samples to submit to the model so that it responds correctly. Errors such as sample overlap, incorrect code generation, slow loading etc may be due to the length of the submitted prompt and the amount of data to be processed. Consequently, it is recommended to *refresh* the page after 3 submissions.
 
 ### Step 4: Save the output
 
