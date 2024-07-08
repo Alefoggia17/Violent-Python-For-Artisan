@@ -49,7 +49,7 @@ In `prompt.txt` there is an example of prompt submitted to ChatGPT for the creat
 Once created, you need to prompt the model. Then log in to [ChatGPT](https://chatgpt.com/) or [Claude Sonnet](https://www.anthropic.com/news/claude-3-5-sonnet), paste the prompt and hit enter.
 
 > [!WARNING]
-> It is recommended to use a subset of samples to submit to the model so that it responds correctly. Errors such as sample overlap, incorrect code generation, slow loading etc may be due to the length of the submitted prompt and the amount of data to be processed. Consequently, it is recommended to *refresh* the page after 3 submissions.
+> It is recommended to use a subset of samples to submit to the model so that it responds correctly. Errors such as sample overlap, incorrect code generation, slow loading etc may be due to the length of the submitted prompt and the amount of data to be processed. Consequently, it is recommended to *refresh* the page if the request is not satisfied.
 
 ### Step 4: Save the output
 
@@ -77,7 +77,7 @@ Through the script `` output_similarity_metrics_best `` it is possible to calcul
 To execute the script, first run ``pip install -r requirements.txt --user`` to install the dependencies. 
 
 > [!WARNING]
-> You may encounter some errors related to module import. If you encounter an error like ``cannot import name 'importlib_metadata' from 'datasets.config' ``, edit the *.py* file indicated with ``import importlib.metadata as importlib_metadata`` or follow other suggestions given [here](https://github.com/huggingface/evaluate/issues/480).
+> You may encounter some errors related to module import in the excecution. If you encounter an error like ``cannot import name 'importlib_metadata' from 'datasets.config' ``, edit the *.py* file indicated with ``import importlib.metadata as importlib_metadata`` or follow other suggestions given [here](https://github.com/huggingface/evaluate/issues/480).
 
 
 ### Step 6: Results
