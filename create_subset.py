@@ -6,8 +6,8 @@ with open("violent_python.in", 'r') as fin:
 with open("violent_python.out", 'r') as fout:
     dataset_out = fout.readlines()
 
-subset_size = 30
-num_subsets = 50
+subset_size = 20
+num_subsets = 1
 
 for subset_index in range(num_subsets):
     unique_numbers = random.sample(range(len(dataset_in)), subset_size)
@@ -18,3 +18,12 @@ for subset_index in range(num_subsets):
         f_in.writelines(subset_in)
     with open(f"python-subset_{subset_index + 1}.out", 'w') as f_out:
         f_out.writelines(subset_out)
+
+
+
+
+
+
+
+
+
