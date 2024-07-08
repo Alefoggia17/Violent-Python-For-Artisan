@@ -71,6 +71,8 @@ Through the script `` output_similarity_metrics_best `` it is possible to calcul
 * CRYSTAL BLEU: is a variant of BLEU designed to improve the quality assessment of machine translation. Includes improvements such as using more reference corpus and more sophisticated weightings for n-grams.
 * CORPUS BLEU: is a variant of BLEU that evaluates the entire corpus of translations rather than individual sentences.
 
+To calculate metrics, specifically modify the metric selection code and run the script.
+
 ### Step 6: Results
 
 The results can be stored in a manually compiled excel file. Consequently, given the previously created Excel file, add the columns relating to the metrics and fill it in.
