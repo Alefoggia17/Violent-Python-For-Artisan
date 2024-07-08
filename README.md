@@ -76,6 +76,10 @@ To calculate metrics, specifically modify the metric selection code and run the 
 
 The results can be stored in a manually compiled excel file. Consequently, given the previously created Excel file, add the columns relating to the metrics and fill it in.
 
+### Step 7: Prompt Engineering Experiment
+
+Repeat the process of evaluating the Python codes using new prompts to observe any changes.
+
 
 
 
