@@ -5,8 +5,6 @@ import pylcs
 import bleu_score
 import os
 import numpy as np
-from crystal_bleu import *
-from file_parser import *
 from rouge import Rouge
 
 meteor = evaluate.load('meteor')
@@ -101,56 +99,39 @@ def calc_sentence_BLEU(hyps, refs):
 		print(f"{score}" )
 	return formatted_score
 
+def read_files(hyps_name, refs_name):
+	refs = []
+	hyps = []
+	
+	with open(refs_name, 'r') as refs_file:
+		refs_temp = refs_file.readlines()
+		refs += [ref.strip('\n') for ref in refs_temp]
+		refs_file.close()
+	with open(hyps_name, 'r') as hyps_file:
+		hyps_temp = hyps_file.readlines()
+		hyps += [hyp.strip('\n') for hyp in hyps_temp]
+		hyps_file.close()
+	return hyps, refs
 
-def calc_crystalBLEU(hyps, refs, re_compute_ngrams: bool):
-	cache_folder = "crystal_cache"
-	if re_compute_ngrams:
-		if not os.listdir(cache_folder):
-			print("No files to delete. Will compute trivially shared ngrams")
-		else:
-			print("ngrams files deleted. Will compute trivially shared ngrams")
-			files = os.listdir(cache_folder)
-			for file in files:
-				file_name = os.path.join(cache_folder, file)
-				os.remove(file_name)
-	else:
-		print("Loading trivially shared ngrams")
-
-	trivial_ngrams = compute_trivially_shared_ngrams(hyps, "python", cache_folder)
-	scores = compute_crystal_bleu(refs, hyps, trivial_ngrams, "python")
-	mean_crystal = np.mean(scores)
-	min_crystal = np.min(scores)
-	max_crystal = np.max(scores)
-	median_crystal = np.median(scores)
-	q1_crystal = np.percentile(scores, 25)
-	q3_crystal = np.percentile(scores, 75)
-	formatted_score = (f'\nCrystalBLEU: {mean_crystal * 100:.2f}% (min: {min_crystal:.3f}, max: {max_crystal:.3f}, median: {median_crystal:.3f}, Q1: {q1_crystal:.3f}, Q3: {q3_crystal:.3f})')
-	print(formatted_score)
-	return formatted_score
-		
 
 if __name__ == '__main__':
 	"""
 		Read with the correct function to parse input file
 	"""
 	
-	hyps, refs = read_json_singlefile('predictions_references_checkpoint-40000_ours.json')
-	print(f"Number of predictions: {len(hyps)}")
-	print(f"Number of references: {len(refs)}")
-
-
-	for i in range(0, 10):
-		print(f"Prediction: {hyps[i]}\n")
-		print(f"Reference: {refs[i]}\n")
+	refs = []
+	hyps = []
+			
+	files_hyps = ["python_output.out"]	## FILE NAME, modificare col nome del file di output del modello
+	files_refs = ["python-subset.out"]	## FILE NAME, modificare col nome del file contenente gli snippet corretti
 	
-	# calc_crystalBLEU(hyps, refs, True)		
-	# calc_corpus_BLEU(hyps, refs)	
-	calc_EM(hyps, refs)
-	# calc_ed(hyps, refs)
-	# calc_rouge(hyps, refs)
-	# calc_meteor(hyps, refs)
-
-
-	# calc_sentence_BLEU(hyps, refs)
-	
-#  sh -c "python output_similarity_metrics.py > output.txt"
+	for fh, fr in zip(files_hyps, files_refs):
+		print('\n', fh, fr, '\n')
+		hyps, refs = read_files(fh, fr)
+			
+		calc_ed(hyps, refs)
+		calc_sentence_BLEU(hyps, refs)
+		calc_corpus_BLEU(hyps, refs)
+		calc_rouge(hyps, refs)
+		calc_meteor(hyps, refs)
+		calc_EM(hyps, refs)
