@@ -29,9 +29,11 @@ The experimental process consists of various steps:
 
 ### Step 1: Dataset
 
-[Here](https://github.com/dessertlab/violent-python/tree/main/function) it is possible to extract the intent/snippet pairs which will constitute the starting dataset. Download each file, divided into .IN and .OUT, and build two datasets: one for the descriptions in natural language, the other for the codes in Python language. The second dataset will represent the *Ground Truth*.
+In the folder *dataset*  it is possible to extract the intent/snippet pairs which will constitute the subsets. Download each file, divided into .IN and .OUT, and generate the subsets by executing the code within the same folder.
+In `create_subset.py` there is an example of Python code for the creation of subsets.
 
-In `create_dataset.py` there is an example of Python code for the creation of dataset.
+> [!NOTE]
+> It is essential to keep the .out files of the various subsets as they represent the *Ground Truth*.
 
 ### Step 2: Creating prompt
 
