@@ -33,6 +33,7 @@ In the folder *dataset*  it is possible to extract the intent/snippet pairs whic
 Use the script `create_subset.py` to create a random subset to be used for evaluation.
 
 > [!NOTE]
+> If nine lines appear when running, rather than 10, rerun the script.
 > It is essential to keep the .out file of the subset as it represents the *Ground Truth*.
 
 ### Step 2: Creating prompt
