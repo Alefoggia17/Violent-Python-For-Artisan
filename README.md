@@ -82,7 +82,8 @@ Repeat the process of evaluating the Python codes using new prompts to observe a
 For example, use the *Persona* technique and specifically change the intents following the current example.
 
 ![Persona Technique](Persona_technique.png)
-"Scan the subnet for the open port 445, then for each host if the port is open append it to a list and return it" to "From now on, act as a network security engineer. Your task is to scan the subnet for open port 445. For each host with the port open, append the host to a list and return the list. Pay close attention to identifying hosts with this specific vulnerability"
+
+
 
 
 
