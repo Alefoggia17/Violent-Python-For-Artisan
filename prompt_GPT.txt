@@ -1,12 +1,12 @@
 A list containing natural language descriptions of Python codes is given.
 Can you build a two column table where:
 1 The first column is the column of natural language descriptions of Python codes.
-2 The second column is the column of Python codes that you need to generate, each with respect to the single element of the first list. The codes must be single-line, i.e. if there are multiple instructions they must be separated by a \n.
+2 The second column is the column of Python codes that you need to generate, each with respect to the single element of the first list. The codes must be single-line, i.e. if there are multiple instructions they must be separated by a \n. Also, the codes are relative to functions so they will all have to start with "def...".
+I'll leave you an example for better understanding:
+“Scan the tgtHost on tgtPort with nmap and calculate the state” is the natural language description.
+"def nmapScan(tgtHost,tgtPort): \n nmScan = nmap.PortScanner() \n nmScan.scan(tgtHost,tgtPort) \n state=nmScan[tgtHost]['tcp'][int(tgtPort)]['state ']\n" is the Python code.
 
-The '\n' or '\\n' should not be considered within the codes, therefore if they are present they must be absolutely ignored, and therefore you must not return.
+This is the list of descriptions: 
 
-This is the list: 
+{List of descriptions}
 
-{ List of descriptions}
-
-{List of Python codes}
