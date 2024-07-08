@@ -29,11 +29,11 @@ The experimental process consists of various steps:
 
 ### Step 1: Dataset
 
-In the folder *dataset*  it is possible to extract the intent/snippet pairs which will constitute the subsets. Download each file, divided into .IN and .OUT, and generate the subsets by executing the code within the same folder.
-In `create_subset.py` there is an example of Python code for the creation of subsets.
+In the folder *dataset*  it is possible to extract the intent/snippet pairs which will constitute the subsets. Download each file, divided into .IN and .OUT, and generate the subset by executing the code within the same folder.
+Use the script `create_subset.py` to create a random subset to be used for evaluation.
 
 > [!NOTE]
-> It is essential to keep the .out files of the various subsets as they represent the *Ground Truth*.
+> It is essential to keep the .out file of the subset as it represents the *Ground Truth*.
 
 ### Step 2: Creating prompt
 
@@ -79,6 +79,10 @@ The results can be stored in a manually compiled excel file. Consequently, given
 ### Step 7: Prompt Engineering Experiment
 
 Repeat the process of evaluating the Python codes using new prompts to observe any changes.
+For example, use the *Persona* technique and specifically change the intents following the current example.
+
+![Persona Technique](images/example.png)
+"Scan the subnet for the open port 445, then for each host if the port is open append it to a list and return it" to "From now on, act as a network security engineer. Your task is to scan the subnet for open port 445. For each host with the port open, append the host to a list and return the list. Pay close attention to identifying hosts with this specific vulnerability"
 
 
 
