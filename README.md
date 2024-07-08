@@ -42,7 +42,7 @@ In the context of Prompt Engineering, it is essential to create correct and prec
 > [!CAUTION]
 > Pay attention to the structure of the code snippets. As you can see, the Python codes are all *single-line*. In fact, multi-line instructions are separated from each other with `\n`.
 
-In `prompt_GPT.txt` there is an example of prompt submitted to ChatGPT for the creation of Python codes.
+In `prompt.txt` there is an example of prompt submitted to ChatGPT for the creation of Python codes.
 
 ### Step 3: Prompt submission
 
