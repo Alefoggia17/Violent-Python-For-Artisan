@@ -1,21 +1,20 @@
 import random
 
-#Apertura del file .IN o .OUT
-with open("python-train.in", 'r') as fin:
-        dataset = fin.readlines()
+with open("violent_python.in", 'r') as fin:
+    dataset_in = fin.readlines()
 
-subsets=[]
-num_subsets=50
-subset_size=30
-for i in range(num_subsets):
-        subset=random.sample(dataset,subset_size)
-        subsets.append(subset)
-        with open("python-subset_"+ str(i+1) +".in", 'w') as fin:
-            for j in range(len(subset)):
-                fin.write(subsets[i][j])   
+with open("violent_python.out", 'r') as fout:
+    dataset_out = fout.readlines()
 
+subset_size = 30
+num_subsets = 50
 
-
-
-
-
+for subset_index in range(num_subsets):
+    unique_numbers = random.sample(range(len(dataset_in)), subset_size)
+    subset_in = [dataset_in[i] for i in unique_numbers]
+    subset_out = [dataset_out[i] for i in unique_numbers]
+    
+    with open(f"python-subset_{subset_index + 1}.in", 'w') as f_in:
+        f_in.writelines(subset_in)
+    with open(f"python-subset_{subset_index + 1}.out", 'w') as f_out:
+        f_out.writelines(subset_out)
