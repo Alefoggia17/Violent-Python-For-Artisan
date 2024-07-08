@@ -1,7 +1,7 @@
-A list containing natural language descriptions of Assembly codes is given.
+A list containing natural language descriptions of Python codes is given.
 Can you build a two column table where:
 1 The first column is the column of natural language descriptions of Assembly codes.
-2 The second column is the column of Assembly codes that you need to generate, each with respect to the single element of the first list. The codes must be single-line, i.e. if there are multiple instructions they must be separated by a \n.
+2 The second column is the column of Python codes that you need to generate, each with respect to the single element of the first list. The codes must be single-line, i.e. if there are multiple instructions they must be separated by a \n.
 
 The '\n' or '\\n' or '\\\n' or '\\\\n' etc. should not be considered within the codes, therefore if they are present they must be absolutely ignored, and therefore you must not return.
 
@@ -9,4 +9,4 @@ This is the list:
 
 { List of descriptions}
 
-{List of Assembly codes}
+{List of Python codes}
