@@ -115,9 +115,6 @@ def read_files(hyps_name, refs_name):
 
 
 if __name__ == '__main__':
-	"""
-		Read with the correct function to parse input file
-	"""
 	
 	refs = []
 	hyps = []
